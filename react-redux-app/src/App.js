@@ -7,15 +7,19 @@ import BreweryList from './components/BreweryList'
 
 function App(props) {
 
-  useEffect( () => {
-    props.fetchBeer();
-  },[])
+  
+  // useEffect( () => {
+  //   props.fetchBeer();
+  // },[])
 
   // calling props.fetchBeer() will call the axios and show action creator - middleware - reducer
   // console.log(props.fetchBeer())
 
+
   return (
     <div className="App">
+      <h1>BEER FIRST.</h1>
+      <button onClick={() => props.fetchBeer()}>Find a Brew</button>
       <BreweryList beers={props.beers}/>
     </div>
   );

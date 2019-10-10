@@ -4,17 +4,17 @@ const Brewery = (props) => {
 
 
      return(
-          <div>
-               <div>
-                    <h2>{props.name}</h2>
-                    <h3>{props.brewery_type}</h3>
-                    <p>{props.website_url}</p>
-               </div>
+          <div className="brew-container">
+    
+               <h2>{props.name}</h2>
+                   
+ 
 
-               <div>
-                    <p>{props.city}</p>
-                    <p>{props.state}</p>
-                    <p>{props.country}</p>
+               <div className="brewing-container">
+                    <h3>Beer type: {props.brewery_type}</h3>
+                    <p>City: {props.city}</p>
+                    <p>State: {props.state}</p>
+                    <p>Country: {props.country}</p>
                </div>
           </div>
      )

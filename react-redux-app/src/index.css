@@ -6,8 +6,38 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.brewery-container{
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  max-width:800px;
+  width:100%;
+  justify-content:space-between;
+}
+h2{
+  margin-top:-10px;
+  background-color:white;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.brew-container{
+  margin-top:60px;
+  border:3px solid black;
+  width:28%;
+  border-radius:30px;
+  background: linear-gradient(to bottom, #bc7012 0%,#efd002 100%);
+}
+button{
+  font-size:2rem;
+  border-radius:30px;
+  padding:10px 20px;
+  border:1px solid black;
+}
+
+
+h1 {
+  font-size: 6rem;
+  font-weight:800;
+  background: linear-gradient(to bottom, #bc7012 0%,#efd002 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
