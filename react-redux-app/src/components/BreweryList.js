@@ -3,9 +3,14 @@ import Brewery from './Brewery'
 
 function BreweryList(props){
 
-
      return(
-          <div></div>
+          <div>
+               {
+                    props.beers.map(item => {
+                         return (<Brewery key={item.id} {...item} />)
+                    })
+               }
+          </div>
      )
 }
 
